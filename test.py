@@ -1,5 +1,5 @@
 import unittest
-from whiteboard import solution
+from solution import solution
 
 class Test(unittest.TestCase):
     def test_1(self):
@@ -10,6 +10,12 @@ class Test(unittest.TestCase):
 
     def test_3(self):
         self.assertEqual(solution('Clutch 112 is the best cohort ever'), 'hctulC 112 is the best trohoc ever')
+
+    def test_4(self):
+        self.assertEqual(solution(''), '')
+
+    def test_5(self):
+        self.assertEqual(solution('a b c d e f g'), 'a b c d e f g')
 
 if __name__== "__main__":
     unittest.main()
